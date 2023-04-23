@@ -1,0 +1,221 @@
+
+    <section class="introduction">
+        <div class="profile-picture">
+          <img src="https://jaminportfolio.netlify.app/profile2.jpg" alt="Profile Picture">
+        </div>
+        <div class="description">
+          <h1>Hi, I'm John Doe</h1>
+          <p>I'm a web developer based in New York. I love building beautiful and functional websites that help businesses grow.</p>
+          <a href="#" class="btn">View My Work</a>
+        </div>
+    </section>
+
+
+/* Introduction section styles */
+.introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+    background-color: #fff;
+    margin-top: -50px;
+    }
+    
+    .profile-picture img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    }
+    
+    .description {
+    text-align: center;
+    margin-top: 30px;
+    }
+    
+    .description h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    }
+    
+    .description p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    max-width: 600px;
+    }
+    
+    .btn {
+    display: inline-block;
+    background-color: #16a085;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    }
+    
+    .btn:hover {
+    background-color: #fff;
+    color: #16a085;
+    }
+// Add JavaScript code here
+// For example, you can add code to dynamically load the project links from a database or API
+
+// Example code to handle project links
+const projectLinks = document.querySelectorAll('.project-links');
+projectLinks.forEach(links => {
+  const liveLink = links.querySelector('.live-link');
+  const sourceLink = links.querySelector('.source-link');
+  liveLink.addEventListener('click', e => {
+    e.preventDefault();
+    // Open live project link in a new tab
+    window.open('https://example.com/project/live');
+  });
+  sourceLink.addEventListener('click', e => {
+    e.preventDefault();
+    // Open source code link in a new tab
+    window.open('https://github.com/example/project');
+  });
+});
+
+  
+    
+ /* Contact section styles */
+#contact {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  
+  /* Form styles */
+  #contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin: 20px;
+    text-align: left;
+    flex-basis: 100%;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-family: inherit;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border: 1px solid #6ea2ff;
+  }
+  
+  textarea {
+    height: 200px;
+  }
+  
+  button[type="submit"] {
+    background-color: #6ea2ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #4d8aff;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .form-group {
+      margin: 10px;
+    }
+  }  
+
+https://via.placeholder.com/400x400
+
+      <section id="projects">
+        <div class="container">
+          <div class="h2-center">
+            <h2>Projects</h2>
+          </div>
+          <div class="project">
+            <div class="project-image">
+              <a href="#"><img src="https://jaminportfolio.netlify.app/project5.png" alt="Project 1"></a>
+            </div>
+            <div class="project-description">
+              <h3>Project 1</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt sit amet diam at vestibulum. Fusce commodo luctus sem, vitae tincidunt lectus. Etiam sodales commodo augue, in molestie velit tristique ut. Proin ut elit malesuada, blandit odio vel, semper orci.</p>
+              <div class="project-details">
+                <div class="languages-used">
+                  <h4>Languages used:</h4>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                  </ul>
+                </div>
+                <div class="skills-involved">
+                  <h4>Skills involved:</h4>
+                  <ul>
+                    <li>Web design</li>
+                    <li>Front-end development</li>
+                    <li>Responsive design</li>
+                  </ul>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="live-project-link">View Live Project</a>
+                  <a href="#" class="source-code-link">View Source Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

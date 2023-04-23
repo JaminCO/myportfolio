@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Messages From Portfolio</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+  </head>
+  <body>
+    <header>
+    </header>
+    <main>
+      <h1>Messages</h1>
+      <div class="messages-container">
+        <div class="message">
+          <div class="message-header">
+            <strong>{{ message.id }}</strong>
+            <h2>{{ message.name }}</h2>
+            <span>{{ message.date }}</span>
+          </div>
+          <div class="message-body">
+            <p><strong>Email:</strong> {{ message.email }}</p>
+            <p>{{ message.message }}</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
