@@ -33,7 +33,7 @@ form.addEventListener('submit', (e) => {
   formData.append('email', email);
   formData.append('message', message);
   
-  fetch('http://127.0.0.1:5000/contact', {
+  fetch('https://port-back.echendu.repl.co/contact', {
     method: 'POST',
     body: formData
   })
